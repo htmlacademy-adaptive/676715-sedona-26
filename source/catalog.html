@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Седона - каталог</title>
+  </head>
+  <body class="page__body">
+    <header class="main-header">
+      <a class="main-header__logo">
+        <img src="img/logo-sedona.svg" width="185" height="96" alt="Логотип Седоны.">
+      </a>
+      <!-- Меню -->
+      <nav class="main-nav">
+        <button class="main-nav__toggle" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item site-list__item--active">
+              <a>Главная</a>
+            </li>
+            <li class="site-list__item">
+              <a href="#">Фото и видео</a>
+            </li>
+            <li class="site-list__item">
+              <a href="#">Форма отзыва</a>
+            </li>
+            <li class="site-list__item">
+              <a href="#">HTML Academy</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main class="main-container">
+      <h1 class="visually-hidden">Фото и видео Седоны</h1>
+      <!-- Внутренний баннер -->
+      <div class="banner">
+        <div class="banner-container">
+          <img src="img/banner/banner-text-inner.svg" width="229" height="39" alt="Общий вид Седоны.">
+        </div>
+      </div>
+      <!-- Список элементов -->
+      <section>
+        <div class="text-container sedona-container">
+          <h2 class="title-h2">Фото и видео</h2>
+          <p class="main__description">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
+        </div>
+        <h3 class="visually-hidden">Список элементов</h3>
+        <ul class="elements__list">
+          <li class="elements__item">
+            <img src="img/elements/element-1.jpg" width="280" height="280" alt="Общий вид неродных просторов.">
+            <h4 class="title-h4">Неродные просторы</h4>
+            <p class="main__description">Автор фото: Борис</p>
+            <button type="button">1350</button>
+          </li>
+          <li class="elements__item">
+            <img src="img/elements/element-2.jpg" width="280" height="280" alt="Общий вид местной растительности.">
+            <h4 class="title-h4">Местная растительность</h4>
+            <p class="main__description">Автор фото: Сергей</p>
+            <button type="button">143</button>
+          </li>
+          <li class="elements__item">
+            <img src="img/elements/element-3.jpg" width="280" height="280" alt="Общий вид дороги на север.">
+            <h4 class="title-h4">Дорога на север</h4>
+            <p class="main__description">Автор фото: Петр</p>
+            <button type="button">96</button>
+          </li>
+          <li class="elements__item">
+            <img src="img/elements/element-4.jpg" width="280" height="280" alt="Общий вид моста дьявола.">
+            <h4 class="title-h4">Мост дьявола</h4>
+            <p class="main__description">Автор фото: Антон</p>
+            <button type="button">254</button>
+          </li>
+        </ul>
+        <!-- Блок "Видеопрезентация Седоны" -->
+        <div class="text-container sedona-container">
+          <h3 class="title-h3">Все еще сомневаетесь?</h3>
+          <p class="main__description">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
+          <img src="img/video-image.jpg" width="280" height="177" alt="Видеопрезентация Седоны.">
+          <button class="video-button" type="button">
+            <span class="visually-hidden">Запустить видеопрезентацию</span>
+          </button>
+        </div>
+      </section>
+    </main>
+    <footer class="main-footer">
+      <b class="sedona__tag">#visitSEDONA</b>
+      <ul class="social__list">
+        <li class="social__item">
+          <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
+            <span class="visually-hidden">ВКонтакте</span>
+          </a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--telegram" href="tg://resolve?domain=htmlacademy">
+            <span class="visually-hidden">Telegram</span>
+          </a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">
+            <span class="visually-hidden">Youtube</span>
+          </a>
+        </li>
+      </ul>
+      <div class="main-footer__copyright copyright">
+        <b class="copyright__text">Разработано</b>
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+      </div>
+    </footer>
+  </body>
+</html>
