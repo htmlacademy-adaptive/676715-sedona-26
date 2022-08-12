@@ -5,8 +5,8 @@
     <title>HTML Academy: Седона - форма отзыва</title>
   </head>
   <body class="page__body">
-    <header class="main-header">
-      <a class="main-header__logo">
+    <header class="header">
+      <a class="header__logo">
         <img src="img/logo-sedona.svg" width="185" height="96" alt="Логотип Седоны.">
       </a>
       <!-- Меню -->
@@ -40,10 +40,10 @@
           <img src="img/banner/banner-text-inner.svg" width="229" height="39" alt="Общий вид Седоны.">
         </div>
       </div>
-      <section>
-        <div class="text-container sedona-container">
-          <h2 class="title-h3">Оставьте свой отзыв</h2>
-          <p class="main__description">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+      <section class="review">
+        <div class="text-container">
+          <h2 class="title title--h3">Оставьте свой отзыв</h2>
+          <p class="review__description">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
         </div>
         <form class="form" action="https://echo.htmlacademy.ru" method="get">
           <fieldset class="form__group">
@@ -77,23 +77,23 @@
             <ul class="form__list">
               <li class="form__item">
                 <label class="control">
-                  <input class="visually-hidden control-input" type="radio" name="positive" value="yes" checked>
-                  <span class="control-mark"></span>
-                  <span class="control-label">Скорее положительное</span>
+                  <input class="visually-hidden control__input" type="radio" name="positive" value="yes" checked>
+                  <span class="control__mark"></span>
+                  <span class="control__label">Скорее положительное</span>
                 </label>
               </li>
               <li class="form__item">
                 <label class="control">
-                  <input class="visually-hidden control-input" type="radio" name="negative" value="no">
-                  <span class="control-mark"></span>
-                  <span class="control-label">Скорее отрицательное</span>
+                  <input class="visually-hidden control__input" type="radio" name="negative" value="no">
+                  <span class="control__mark"></span>
+                  <span class="control__label">Скорее отрицательное</span>
                 </label>
               </li>
               <li class="form__item">
                 <label class="control">
-                  <input class="visually-hidden control-input" type="radio" name="no-answer" value="no">
-                  <span class="control-mark"></span>
-                  <span class="control-label">Затрудняюсь ответить</span>
+                  <input class="visually-hidden control__input" type="radio" name="no-answer" value="no">
+                  <span class="control__mark"></span>
+                  <span class="control__label">Затрудняюсь ответить</span>
                 </label>
               </li>
             </ul>
@@ -103,30 +103,30 @@
             <ul class="form__list">
               <li class="form__item">
                 <label class="control">
-                  <input class="visually-hidden control-input" type="checkbox" name="devil's-bridge" checked>
-                  <span class="control-mark"></span>
-                  <span class="control-label">Мост Дьявола</span>
+                  <input class="visually-hidden control__input" type="checkbox" name="devil's-bridge" checked>
+                  <span class="control__mark"></span>
+                  <span class="control__label">Мост Дьявола</span>
                 </label>
               </li>
               <li class="form__item">
                 <label class="control">
-                  <input class="visually-hidden control-input" type="checkbox" name="mount-bell" checked>
-                  <span class="control-mark"></span>
-                  <span class="control-label">Гора-Колокол</span>
+                  <input class="visually-hidden control__input" type="checkbox" name="mount-bell" checked>
+                  <span class="control__mark"></span>
+                  <span class="control__label">Гора-Колокол</span>
                 </label>
               </li>
               <li class="form__item">
                 <label class="control">
-                  <input class="visually-hidden control-input" type="checkbox" name="slide-park" checked>
-                  <span class="control-mark"></span>
-                  <span class="control-label">Слайд-парк</span>
+                  <input class="visually-hidden control__input" type="checkbox" name="slide-park" checked>
+                  <span class="control__mark"></span>
+                  <span class="control__label">Слайд-парк</span>
                 </label>
               </li>
               <li class="form__item">
                 <label class="control">
-                  <input class="visually-hidden control-input" type="checkbox" name="red-rocks">
-                  <span class="control-mark"></span>
-                  <span class="control-label">Красные скалы</span>
+                  <input class="visually-hidden control__input" type="checkbox" name="red-rocks">
+                  <span class="control__mark"></span>
+                  <span class="control__label">Красные скалы</span>
                 </label>
               </li>
             </ul>
@@ -142,31 +142,33 @@
             <span>Отправить отзыв</span>
           </button>
         </form>
-        <p class="main__description">* — обязательные поля</p>
+        <p class="review__description review__description--sub">* — обязательные поля</p>
       </section>
     </main>
-    <footer class="main-footer">
-      <b class="sedona__tag">#visitSEDONA</b>
-      <ul class="social__list">
-        <li class="social__item">
-          <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
-            <span class="visually-hidden">ВКонтакте</span>
-          </a>
-        </li>
-        <li class="social__item">
-          <a class="social__link social__link--telegram" href="tg://resolve?domain=htmlacademy">
-            <span class="visually-hidden">Telegram</span>
-          </a>
-        </li>
-        <li class="social__item">
-          <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">
-            <span class="visually-hidden">Youtube</span>
-          </a>
-        </li>
-      </ul>
-      <div class="main-footer__copyright copyright">
-        <b class="copyright__text">Разработано</b>
-        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+    <footer class="footer">
+      <div class="footer__wrapper">
+        <b class="footer__tag">#visitSEDONA</b>
+        <ul class="footer__social social">
+          <li class="social__element">
+            <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
+              <span class="visually-hidden">ВКонтакте</span>
+            </a>
+          </li>
+          <li class="social__element">
+            <a class="social__link social__link--telegram" href="tg://resolve?domain=htmlacademy">
+              <span class="visually-hidden">Telegram</span>
+            </a>
+          </li>
+          <li class="social__element">
+            <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">
+              <span class="visually-hidden">Youtube</span>
+            </a>
+          </li>
+        </ul>
+        <div class="footer__copyright copyright">
+          <b class="copyright__text">Разработано</b>
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+        </div>
       </div>
     </footer>
   </body>
