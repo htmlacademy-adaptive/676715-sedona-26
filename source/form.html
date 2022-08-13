@@ -48,26 +48,26 @@
         <form class="form" action="https://echo.htmlacademy.ru" method="get">
           <fieldset class="form__group">
             <legend class="form__group-title">Представьтесь:</legend>
-            <div class="field-group">
+            <div class="form__field-group">
               <label class="form__label" for="review-name">Имя*:</label>
               <input class="form__field review-name" type="text" value="Пётр" id="review-name" name="review-name" placeholder="Введите имя" required>
             </div>
-            <div class="field-group">
+            <div class="form__field-group">
               <label class="form__label" for="review-last-name">Фамилия*:</label>
               <input class="form__field review-last-name" type="text" value="Пустота" id="review-last-name" name="review-last-name" placeholder="Введите фамилию" required>
             </div>
-            <div class="field-group">
+            <div class="form__field-group">
               <label class="form__label" for="review-middle-name">Отчество:</label>
               <input class="form__field review-middle-name" type="text" value="Викторович" id="review-middle-name" name="review-middle-name" placeholder="Введите отчество">
             </div>
           </fieldset>
           <fieldset class="form__group">
             <legend class="form__group-title">Контактная информация:</legend>
-            <div class="field-group">
+            <div class="form__field-group">
               <label class="form__label" for="phone">Контактный телефон*:</label>
               <input class="form__field phone" type="text" id="phone" name="phone" placeholder="Введите телефон" required>
             </div>
-            <div class="field-group">
+            <div class="form__field-group">
               <label class="form__label" for="email">Электронная почта*:</label>
               <input class="form__field email" type="email" id="email" name="email" placeholder="Введите e-mail" required>
             </div>
@@ -133,7 +133,7 @@
           </fieldset>
           <fieldset class="form__group">
             <legend class="form__group-title">Опишите свои эмоции:</legend>
-            <div class="field-group">
+            <div class="form__field-group">
               <label class="visually-hidden" for="comment">Комментарий:</label>
               <textarea class="form__field comment" rows="6" id="comment" name="comment" placeholder="Опишите подробно все свои восторги"></textarea>
             </div>
@@ -167,7 +167,9 @@
         </ul>
         <div class="footer__copyright copyright">
           <b class="copyright__text">Разработано</b>
-          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+            <span class="visually-hidden">HTML Academy</span>
+          </a>
         </div>
       </div>
     </footer>
