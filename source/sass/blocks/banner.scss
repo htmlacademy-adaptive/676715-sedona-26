@@ -1,0 +1,17 @@
+// @import "variable.scss";
+
+.banner {
+  // height: 389px;
+  padding-top: 90px;
+  background-color: $banner;
+  background-image: url("../../img/banner/banner-background.jpg");
+  background-repeat: no-repeat;
+  // background-size: auto 389px;
+}
+
+.banner--inner {
+  // height: 214px;
+  padding-top: 52px;
+  background-image: url("../../img/banner/banner-background-inner.jpg");
+  // background-size: auto 214px;
+}

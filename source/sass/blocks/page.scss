@@ -1,0 +1,13 @@
+// @import "variable.scss";
+
+.page {
+  box-sizing: border-box;
+}
+
+.page__body {
+  font-family: "PT Sans", sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  color: $dark;
+  background-color: $white;
+}

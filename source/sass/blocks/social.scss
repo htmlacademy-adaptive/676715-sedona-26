@@ -1,0 +1,14 @@
+// @import "variable.scss";
+
+.social {
+  padding-bottom: 40px;
+}
+
+.social__element:not(:last-child) {
+  margin-right: 6px;
+}
+
+.social__link {
+  color: $white;
+  background-color: $blue;
+}

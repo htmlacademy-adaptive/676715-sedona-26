@@ -1,0 +1,9 @@
+// @import "mixin.scss";
+
+.main-container {
+  @include transform-align;
+}
+
+.main-container .description {
+  @include margin-zeroing;
+}
