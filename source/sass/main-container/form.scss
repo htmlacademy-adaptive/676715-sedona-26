@@ -13,10 +13,8 @@
 }
 
 .form__group .title--h2 {
+  margin: 0 auto;
   padding: 24px 0 20px 0;
-
-  // не работает в Firefox
-  text-align: center;
 }
 
 .form__field-group {

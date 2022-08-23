@@ -1,0 +1,20 @@
+.main-nav__list {
+  @include list-zeroing;
+}
+
+.main-nav__item {
+  padding-bottom: 1px;
+}
+
+.main-nav__link {
+  display: block;
+  padding: 17px 0 12px 0;
+}
+
+.main-nav__item:first-of-type .main-nav__link {
+  box-shadow: 0 1px 0 rgba($shadow, 0.2);
+}
+
+.main-nav__item:not(:first-of-type) .main-nav__link {
+  box-shadow: 0 1px 0 rgba($shadow, 0.2), inset 0 1px 0 rgba($white, 0.2);
+}

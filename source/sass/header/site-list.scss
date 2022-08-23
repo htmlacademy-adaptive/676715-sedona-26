@@ -1,12 +1,7 @@
-// @import "variable.scss";
-
 .site-list__item {
   color: $white;
   background-color: $blue;
   text-align: center;
-
-  // не добавляется к каждому пункту списка
-  box-shadow: 0 1px 0 rgba($shadow, 0.2);
 }
 
 .site-list__link {

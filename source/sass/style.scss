@@ -1,20 +1,31 @@
-@import "./blocks/fonts.scss";
-@import "./blocks/variable.scss";
-@import "./blocks/page.scss";
-@import "./blocks/title-button.scss";
-@import "./blocks/header.scss";
-@import "./blocks/main-nav.scss";
-@import "./blocks/site-list.scss";
-@import "./blocks/main-container.scss";
-@import "./blocks/banner.scss";
-@import "./blocks/advantages.scss";
-@import "./blocks/text.scss";
-@import "./blocks/search.scss";
-@import "./blocks/footer.scss";
-@import "./blocks/social.scss";
-@import "./blocks/copyright.scss";
-@import "./blocks/photos-video.scss";
-@import "./blocks/video.scss";
-@import "./blocks/review.scss";
-@import "./blocks/form.scss";
+// Global
+@import "./global/variable.scss";
+@import "./global/mixin.scss";
+@import "./global/fonts.scss";
+@import "./global/title-button.scss";
+@import "./global/page.scss";
 
+// Header
+@import "./header/header.scss";
+@import "./header/main-nav.scss";
+@import "./header/site-list.scss";
+
+// Index - Main-container
+@import "./main-container/main-container.scss";
+@import "./main-container/banner.scss";
+@import "./main-container/advantages.scss";
+@import "./main-container/text.scss";
+@import "./main-container/search.scss";
+
+// Catalog - Main-container
+@import "./main-container/photos-video.scss";
+@import "./main-container/video.scss";
+
+// Form - Main-container
+@import "./main-container/review.scss";
+@import "./main-container/form.scss";
+
+// Footer
+@import "./footer/footer.scss";
+@import "./footer/social.scss";
+@import "./footer/copyright.scss";
