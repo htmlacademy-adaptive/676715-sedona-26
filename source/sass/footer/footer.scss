@@ -1,0 +1,32 @@
+.footer {
+  @include transform-align;
+  padding: 39px 0 23px 0;
+}
+
+.footer__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer .title {
+  padding-bottom: 34px;
+}
+
+.footer__social {
+  @include list-zeroing;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.footer .description {
+  @include margin-zeroing;
+}
+
+.footer__copyright {
+  display: flex;
+}
+
+.footer__copyright .description {
+  padding-right: 13px;
+}

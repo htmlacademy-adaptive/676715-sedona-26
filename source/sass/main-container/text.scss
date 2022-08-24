@@ -1,0 +1,22 @@
+.text,
+.text .title {
+  color: $white;
+  background-color: $blue;
+}
+
+.text-sub {
+  color: $dark;
+  background-color: $white;
+  text-align: left;
+}
+
+.text-sub .title {
+  color: $black;
+  background-color: $white;
+  text-align: left;
+}
+
+.text-main {
+  color: $dark;
+  background-color: $grey;
+}

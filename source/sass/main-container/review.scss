@@ -1,0 +1,21 @@
+.review {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 36px 0 24px 0;
+}
+
+.review .title--h3 {
+  padding-bottom: 24px;
+}
+
+.review__description {
+  padding-bottom: 28px;
+}
+
+.review__description-small {
+  font-size: 12px;
+  line-height: 21px;
+  color: rgba($dark, 0.6);
+  text-align: right;
+}
