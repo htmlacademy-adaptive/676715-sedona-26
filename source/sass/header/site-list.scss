@@ -1,6 +1,4 @@
 .site-list__item {
-  color: $white;
-  background-color: $blue;
   text-align: center;
 }
 
@@ -11,4 +9,17 @@
   color: $white;
   background-color: $blue;
   text-decoration: none;
+
+  @media (min-width: $tablet-width) {
+    font-size: 14px;
+    line-height: 21px;
+    color: $black;
+    background-color: $white;
+  }
+}
+
+.site-list__link--active {
+  @media (min-width: $tablet-width) {
+    color: $braun;
+  }
 }

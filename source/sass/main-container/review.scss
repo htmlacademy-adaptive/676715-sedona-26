@@ -3,6 +3,27 @@
   flex-direction: column;
   align-items: center;
   padding: 36px 0 24px 0;
+
+  @media (min-width: $tablet-width) {
+    padding: 64px 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 115px;
+  }
+}
+
+.review .page__container {
+  @media (min-width: $desktop-width) {
+    width: 960px;
+  }
+}
+
+.review .text-container {
+  @media (min-width: $tablet-width) {
+    @include text-centering;
+    width: 435px;
+  }
 }
 
 .review .title--h3 {
@@ -11,11 +32,4 @@
 
 .review__description {
   padding-bottom: 28px;
-}
-
-.review__description-small {
-  font-size: 12px;
-  line-height: 21px;
-  color: rgba($dark, 0.6);
-  text-align: right;
 }

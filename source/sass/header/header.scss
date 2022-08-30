@@ -1,3 +1,28 @@
 .header {
   @include transform-align;
+  position: relative;
+  display: flex;
+  padding: 0 20px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+  }
+}
+
+.header__logo {
+  position: absolute;
+  width: 185px;
+  left: 67px;
+
+  @media (min-width: $tablet-width) {
+    left: 290px;
+  }
+
+  @media (min-width: $desktop-width) {
+    left: 507px;
+  }
+}
+
+.header__image {
+  display: block;
 }

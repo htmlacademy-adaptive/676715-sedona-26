@@ -1,3 +1,7 @@
+.text-container {
+  @include text-centering;
+}
+
 .text,
 .text .title {
   color: $white;
@@ -8,12 +12,20 @@
   color: $dark;
   background-color: $white;
   text-align: left;
+
+  @media (min-width: $tablet-width) {
+    text-align: center;
+  }
 }
 
 .text-sub .title {
   color: $black;
   background-color: $white;
   text-align: left;
+
+  @media (min-width: $tablet-width) {
+    text-align: center;
+  }
 }
 
 .text-main {

@@ -2,13 +2,14 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Седона - каталог</title>
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body class="page__body">
     <header class="header">
       <a class="header__logo">
-        <img src="img/logo-sedona.svg" width="185" height="96" alt="Логотип Седоны.">
+        <img class="header__image" src="img/logo-sedona.svg" width="185" height="96" alt="Логотип Седоны.">
       </a>
       <!-- Меню -->
       <nav class="main-nav">
@@ -43,44 +44,65 @@
       </div>
       <!-- Список элементов -->
       <section class="photos-video">
-        <div class="text-container">
-          <h2 class="title title--h2">Фото и видео</h2>
-          <p class="photos-video__description description">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
-        </div>
-        <ul class="photos-video__list">
-          <li class="photos-video__item">
-            <img class="photos-video__image" src="img/photo-video/element-1.jpg" width="280" height="280" alt="Общий вид неродных просторов.">
-            <h3 class="title title--h4">Неродные просторы</h3>
-            <p class="photos-video__text description">Автор фото: Борис</p>
-            <button type="button">1350</button>
+        <div class="page__container">
+          <div class="text-container">
+            <h2 class="title title--h2">Фото и видео</h2>
+            <p class="photos-video__description description">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
+          </div>
+          <ul class="photos-video__list">
+            <li class="photos-video__item">
+              <img class="photos-video__image" src="img/photo-video/element-1.jpg" width="280" height="280" alt="Общий вид неродных просторов.">
+              <!-- остановилась здесь -->
+              <div class="photos-video__content">
+                <div class="photos-video__content-wrapper">
+                  <h3 class="title title--h4">Неродные просторы</h3>
+                  <p class="photos-video__text description">Автор фото: Борис</p>
+                </div>
+                <button type="button">1350</button>
+              </div>
+            </li>
+            <li class="photos-video__item">
+              <img class="photos-video__image" src="img/photo-video/element-2.jpg" width="280" height="280" alt="Общий вид местной растительности.">
+              <div class="photos-video__content">
+                <div class="photos-video__content-wrapper">
+                  <h3 class="title title--h4">Местная растительность</h3>
+                  <p class="photos-video__text description">Автор фото: Сергей</p>
+                </div>
+                <button type="button">143</button>
+              </div>
+            </li>
+            <li class="photos-video__item">
+              <img class="photos-video__image" src="img/photo-video/element-3.jpg" width="280" height="280" alt="Общий вид дороги на север.">
+              <div class="photos-video__content">
+                <div class="photos-video__content-wrapper">
+                  <h3 class="title title--h4">Дорога на север</h3>
+                  <p class="photos-video__text description">Автор фото: Петр</p>
+                </div>
+                <button type="button">96</button>
+              </div>
           </li>
-          <li class="photos-video__item">
-            <img class="photos-video__image" src="img/photo-video/element-2.jpg" width="280" height="280" alt="Общий вид местной растительности.">
-            <h3 class="title title--h4">Местная растительность</h3>
-            <p class="photos-video__text description">Автор фото: Сергей</p>
-            <button type="button">143</button>
-          </li>
-          <li class="photos-video__item">
-            <img class="photos-video__image" src="img/photo-video/element-3.jpg" width="280" height="280" alt="Общий вид дороги на север.">
-            <h3 class="title title--h4">Дорога на север</h3>
-            <p class="photos-video__text description">Автор фото: Петр</p>
-            <button type="button">96</button>
-          </li>
-          <li class="photos-video__item">
-            <img class="photos-video__image" src="img/photo-video/element-4.jpg" width="280" height="280" alt="Общий вид моста дьявола.">
-            <h3 class="title title--h4">Мост дьявола</h3>
-            <p class="photos-video__text description">Автор фото: Антон</p>
-            <button type="button">254</button>
-          </li>
-        </ul>
-        <!-- Блок "Видеопрезентация Седоны" -->
-        <div class="video text-container">
-          <h3 class="title title--h3">Все еще сомневаетесь?</h3>
-          <p class="video__text description">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
-          <img src="img/photo-video/video-image.jpg" width="280" height="177" alt="Видеопрезентация Седоны.">
-          <button class="video-button button" type="button">
-            <span class="visually-hidden">Запустить видеопрезентацию</span>
-          </button>
+            <li class="photos-video__item">
+              <img class="photos-video__image" src="img/photo-video/element-4.jpg" width="280" height="280" alt="Общий вид моста дьявола.">
+              <div class="photos-video__content">
+                <div class="photos-video__content-wrapper">
+                  <h3 class="title title--h4">Мост дьявола</h3>
+                  <p class="photos-video__text description">Автор фото: Антон</p>
+                </div>
+                <button type="button">254</button>
+              </div>
+            </li>
+          </ul>
+          <!-- Блок "Видеопрезентация Седоны" -->
+          <div class="video">
+            <div class="video__container">
+              <h3 class="title title--h3">Все еще сомневаетесь?</h3>
+              <p class="video__text description">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
+              <img class="video__image" src="img/photo-video/video-image.jpg" width="280" height="177" alt="Видеопрезентация Седоны.">
+              <button class="video-button button" type="button">
+                <span class="visually-hidden">Запустить видеопрезентацию</span>
+              </button>
+            </div>
+          </div>
         </div>
       </section>
     </main>
