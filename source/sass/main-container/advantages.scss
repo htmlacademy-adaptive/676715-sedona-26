@@ -16,7 +16,6 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 485px;
     padding: 59px 0 44px 0;
   }
 }
@@ -42,6 +41,18 @@
   }
 }
 
+.advantages__list-wrapper {
+  @media (min-width: $tablet-width) {
+    @include text-centering;
+    width: 768px;
+  }
+
+  @media (min-width: $desktop-width) {
+    @include text-centering;
+    width: 1200px;
+  }
+}
+
 .advantages__item {
   @media (min-width: $tablet-width) {
     display: flex;
@@ -53,7 +64,7 @@
 .advantages__item .text__container,
 .advantages__sublist-item .text-sub__container,
 .advantages__item-main .text-main__container {
-  width: 284px;
+  // width: 284px;
 }
 
 .advantages__item .text__container {
@@ -149,27 +160,11 @@
   }
 }
 
-.accommodation {
-  @media (min-width: $tablet-width) {
-    margin-right: 73px;
-  }
-
-  @media (min-width: $desktop-width) {
-    margin-right: 104px;
-  }
-}
-
-.food {
-  @media (min-width: $tablet-width) {
-    margin-right: 70px;
-  }
-
-  @media (min-width: $desktop-width) {
-    margin-right: 121px;
-  }
-}
-
 .advantages__sublist-item {
+  // @media (min-width: $tablet-width) {
+  //   padding-left: 47px;
+  // }
+
   @media (min-width: $desktop-width) {
     padding-top: 99px;
   }
@@ -179,7 +174,41 @@
   padding-bottom: 25px;
 
   @media (min-width: $tablet-width) {
-    padding-bottom: 0;
+    padding-bottom: 25px;
+  }
+}
+
+.accommodation {
+  padding-left: 47px;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 73px;
+    padding-left: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 104px;
+  }
+}
+
+.food {
+  padding-left: 52px;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 49px;
+    padding-left: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 114px;
+  }
+}
+
+.souvenirs {
+  padding-left: 44px;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 0;
   }
 }
 
@@ -187,9 +216,9 @@
   padding-bottom: 16px;
 }
 
-.accommodation .text-sub__container {
+.advantages__sublist-item .text-sub__container {
   @media (min-width: $tablet-width) {
-    width: 185px;
+    width: 193px;
   }
 
   @media (min-width: $desktop-width) {
@@ -197,25 +226,36 @@
   }
 }
 
-.food .text-sub__container {
-  @media (min-width: $tablet-width) {
-    width: 180px;
-  }
+//закомментировано до PixelPerfect
+// .accommodation .text-sub__container {
+//   @media (min-width: $tablet-width) {
+//     width: 185px;
+//   }
 
-  @media (min-width: $desktop-width) {
-    width: 313px;
-  }
-}
+//   @media (min-width: $desktop-width) {
+//     width: 282px;
+//   }
+// }
 
-.souvenirs .text-sub__container {
-  @media (min-width: $tablet-width) {
-    width: 193px;
-  }
+// .food .text-sub__container {
+//   @media (min-width: $tablet-width) {
+//     width: 180px;
+//   }
 
-  @media (min-width: $desktop-width) {
-    width: 244px;
-  }
-}
+//   @media (min-width: $desktop-width) {
+//     width: 313px;
+//   }
+// }
+
+// .souvenirs .text-sub__container {
+//   @media (min-width: $tablet-width) {
+//     width: 193px;
+//   }
+
+//   @media (min-width: $desktop-width) {
+//     width: 244px;
+//   }
+// }
 
 .bridge .text__wrapper {
   @media (min-width: $tablet-width) {
@@ -227,7 +267,7 @@
   padding: 39px 0 35px 0;
 
   @media (min-width: $tablet-width) {
-    padding: 43px 36px 41px 36px;
+    padding: 43px 36px;
   }
 
   @media (min-width: $desktop-width) {
