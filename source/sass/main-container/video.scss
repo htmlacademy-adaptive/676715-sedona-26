@@ -1,5 +1,21 @@
 .video {
   padding-top: 17px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 58px;
+  }
+}
+
+.video__container {
+  @include text-centering;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 266px;
+
+  @media (min-width: $tablet-width) {
+    width: 445px;
+  }
 }
 
 .video .title {
@@ -8,4 +24,12 @@
 
 .video__text {
   padding-bottom: 38px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 66px;
+  }
+}
+
+.video__image {
+  display: block;
 }

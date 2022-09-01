@@ -1,5 +1,9 @@
 .social {
   padding-bottom: 40px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 0;
+  }
 }
 
 .social__element:not(:last-child) {
@@ -7,6 +11,9 @@
 }
 
 .social__link {
+  display: block;
+  width: 48px;
+  height: 48px;
   color: $white;
   background-color: $blue;
 }

@@ -3,6 +3,14 @@
   flex-direction: column;
   align-items: center;
   padding-top: 37px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 66px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 100px;
+  }
 }
 
 .photos-video .title--h2 {
@@ -11,32 +19,103 @@
 
 .photos-video .text-container {
   padding-bottom: 25px;
+
+  @media (min-width: $tablet-width) {
+    width: 458px;
+    padding-bottom: 67px;
+  }
 }
 
 .photos-video__list {
   @include list-zeroing;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 }
 
 .photos-video__item {
   display: flex;
   flex-direction: column;
   align-items: start;
-  padding: 24px 0 30px 0;
+  padding: 24px 0 25px 0;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: relative;
+  }
+}
+
+.photos-video__item:first-child {
+  @media (min-width: $tablet-width) {
+    grid-column: 1 / -1;
+  }
 }
 
 .photos-video__image {
   display: block;
   padding-bottom: 15px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 0;
+  }
 }
 
-.photos-video .title--h4 {
+.photos-video__content {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 22px 20px 15px 20px;
+    background-color: $grey-light;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    bottom: 0;
+    background-color: rgba($black, 0.3);
+  }
+}
+
+.photos-video__content-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+
+  @media (min-width: $desktop-width) {
+    color: $white;
+  }
+}
+
+.photos-video__content-wrapper .title--h4 {
   padding-bottom: 10px;
+
+  @media (min-width: $desktop-width) {
+    color: $white;
+  }
 }
 
 .photos-video__text {
   text-transform: none;
 }
 
-.photos-video__item .description {
+.photos-video__content-wrapper .description {
   padding-bottom: 11px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 0;
+  }
 }
