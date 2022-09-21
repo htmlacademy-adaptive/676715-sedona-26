@@ -11,11 +11,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 266px;
-
-  @media (min-width: $tablet-width) {
-    width: 445px;
-  }
 }
 
 .video .title {
@@ -34,40 +29,9 @@
   position: relative;
 }
 
-.video__block[poster] {
-  @media (max-width: $mobile-width-only) {
-    width: 280px;
-    height: 177px;
-    background-color: $braun;
-    background-image: url("../../img/photo-video/video-image-mobile.jpg");
-    background-repeat: no-repeat;
-    background-size: 100% auto;
-
-    @media (min-resolution: 2dppx) {
-      background-image: url("../../img/photo-video/video-image-mobile@2x.jpg");
-    }
-  }
-
-  @media (min-width: $tablet-width) {
-    width: 648px;
-    height: 500px;
-    background-image: url("../../img/photo-video/video-image-tablet.jpg");
-    background-size: 100% auto;
-
-    @media (min-resolution: 2dppx) {
-      background-image: url("../../img/photo-video/video-image-tablet@2x.jpg");
-    }
-  }
-
-  @media (min-width: $desktop-width) {
-    width: 800px;
-    background-image: url("../../img/photo-video/video-image-desktop.jpg");
-    background-size: 100% auto;
-
-    @media (min-resolution: 2dppx) {
-      background-image: url("../../img/photo-video/video-image-desktop@2x.jpg");
-    }
-  }
+.video__image {
+  display: block;
+  width: 100%;
 }
 
 .video__button {

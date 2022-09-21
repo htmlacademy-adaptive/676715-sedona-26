@@ -82,6 +82,7 @@
 
 .photos-video__image {
   display: block;
+  width: 100%;
   padding-bottom: 15px;
 
   @media (min-width: $tablet-width) {
@@ -114,6 +115,7 @@
   display: flex;
   flex-direction: column;
   align-items: start;
+  text-align: left;
 
   @media (min-width: $desktop-width) {
     color: $white;
@@ -146,6 +148,7 @@
   font-weight: 700;
   color: $black;
   background-color: transparent;
+  text-align: right;
   border: none;
   cursor: pointer;
 
