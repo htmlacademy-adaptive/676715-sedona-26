@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>HTML Academy: Седона - каталог</title>
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="img/favicons/favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="img/favicons/apple.png">
+    <link rel="manifest" href="manifest.webmanifest">
+    <base href="https://htmlacademy-adaptive.github.io/676715-sedona-26/5/">
+</head>
+  <body class="page__body">
+    <header class="header">
+      <a class="header__logo" href="index.html">
+        <img class="header__image" loading="lazy" src="img/logo-sedona.svg" width="185" height="96" alt="Логотип Седоны.">
+      </a>
+      <!-- Меню -->
+      <nav class="main-nav main-nav--closed main-nav--nojs"> <!-- main-nav--closed меню закрыто, main-nav--opened - меню открыто -->
+        <button class="main-nav__toggle button" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list site-list">
+            <li class="main-nav__item site-list__item">
+              <a class="main-nav__link site-list__link" href="index.html">Главная</a>
+            </li>
+            <li class="main-nav__item site-list__item">
+              <a class="main-nav__link site-list__link site-list__link--active">Фото и видео</a>
+            </li>
+            <li class="main-nav__item site-list__item">
+              <a class="main-nav__link site-list__link" href="form.html">Форма отзыва</a>
+            </li>
+            <li class="main-nav__item site-list__item">
+              <a class="main-nav__link site-list__link" href="#">HTML Academy</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main class="main-container">
+      <h1 class="visually-hidden">Фото и видео Седоны</h1>
+      <!-- Внутренний баннер -->
+      <div class="banner banner--inner">
+        <div class="banner__container">
+          <img class="banner__text" src="img/banner/banner-text-inner.svg" loading="lazy" width="229" height="39" alt="Общий вид Седоны.">
+        </div>
+      </div>
+      <!-- Список элементов -->
+      <section class="photos-video">
+        <div class="page__container">
+          <div class="text-container">
+            <h2 class="title title--h2">Фото и видео</h2>
+            <p class="photos-video__description description">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
+          </div>
+          <ul class="photos-video__list">
+            <li class="photos-video__item">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/photo-video/element-1-desktop.jpg 1x, img/photo-video/element-1-desktop@2x.jpg 2x" width="1200" height="400">
+                <source media="(min-width: 768px)" srcset="img/photo-video/element-1-tablet.jpg 1x, img/photo-video/element-1-tablet@2x.jpg 2x" width="648" height="400">
+                <img class="photos-video__image" src="img/photo-video/element-1-mobile.jpg" srcset="img/photo-video/element-1-mobile@2x.jpg 2x" loading="lazy" width="280" height="280" alt="Общий вид неродных просторов.">
+              </picture>
+              <div class="photos-video__content">
+                <div class="photos-video__content-wrapper">
+                  <h3 class="title title--h4">Неродные просторы</h3>
+                  <p class="photos-video__text description">Автор фото: Борис</p>
+                </div>
+                <button class="photos-video__button" type="button">
+                  <svg class="photos-video__icon" width="23" height="21" aria-label="Нравится фото">
+                    <use href="img/sprite.svg#icon-like"></use>
+                  </svg>
+                  1350
+                </button>
+              </div>
+            </li>
+            <li class="photos-video__item">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/photo-video/element-2-desktop.jpg 1x, img/photo-video/element-2-desktop@2x.jpg 2x" width="400" height="267">
+                <source media="(min-width: 768px)" srcset="img/photo-video/element-2-tablet.jpg 1x, img/photo-video/element-2-tablet@2x.jpg 2x" width="324" height="267">
+                <img class="photos-video__image" src="img/photo-video/element-2-mobile.jpg" srcset="img/photo-video/element-2-mobile@2x.jpg 2x" loading="lazy" width="280" height="280" alt="Общий вид местной растительности.">
+              </picture>
+              <div class="photos-video__content">
+                <div class="photos-video__content-wrapper">
+                  <h3 class="title title--h4">Местная растительность</h3>
+                  <p class="photos-video__text description">Автор фото: Сергей</p>
+                </div>
+                <button class="photos-video__button" type="button">
+                  <svg class="photos-video__icon" width="23" height="21" aria-label="Нравится фото">
+                    <use href="img/sprite.svg#icon-like"></use>
+                  </svg>
+                  143
+                </button>
+              </div>
+            </li>
+            <li class="photos-video__item">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/photo-video/element-3-desktop.jpg 1x, img/photo-video/element-3-desktop@2x.jpg 2x" width="400" height="267">
+                <source media="(min-width: 768px)" srcset="img/photo-video/element-3-tablet.jpg 1x, img/photo-video/element-3-tablet@2x.jpg 2x" width="324" height="267">
+                <img class="photos-video__image" src="img/photo-video/element-3-mobile.jpg" srcset="img/photo-video/element-3-mobile@2x.jpg 2x" loading="lazy" width="280" height="280" alt="Общий вид дороги на север.">
+              </picture>
+              <div class="photos-video__content">
+                <div class="photos-video__content-wrapper">
+                  <h3 class="title title--h4">Дорога на север</h3>
+                  <p class="photos-video__text description">Автор фото: Петр</p>
+                </div>
+                <button class="photos-video__button" type="button">
+                  <svg class="photos-video__icon" width="23" height="21" aria-label="Нравится фото">
+                    <use href="img/sprite.svg#icon-like"></use>
+                  </svg>
+                  96
+                </button>
+              </div>
+          </li>
+            <li class="photos-video__item">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/photo-video/element-4-desktop.jpg 1x, img/photo-video/element-4-desktop@2x.jpg 2x" width="400" height="267">
+                <source media="(min-width: 768px)" srcset="img/photo-video/element-4-tablet.jpg 1x, img/photo-video/element-4-tablet@2x.jpg 2x" width="324" height="267">
+                <img class="photos-video__image" src="img/photo-video/element-4-mobile.jpg" srcset="img/photo-video/element-4-mobile@2x.jpg 2x" loading="lazy" width="280" height="280" alt="Общий вид моста дьявола.">
+              </picture>
+              <div class="photos-video__content">
+                <div class="photos-video__content-wrapper">
+                  <h3 class="title title--h4">Мост дьявола</h3>
+                  <p class="photos-video__text description">Автор фото: Антон</p>
+                </div>
+                <button class="photos-video__button" type="button">
+                  <svg class="photos-video__icon" width="23" height="21" aria-label="Нравится фото">
+                    <use href="img/sprite.svg#icon-like"></use>
+                  </svg>
+                  254
+                </button>
+              </div>
+            </li>
+          </ul>
+          <!-- Блок "Видеопрезентация Седоны" -->
+          <div class="video">
+            <div class="video__container">
+              <h3 class="title title--h3">Все еще сомневаетесь?</h3>
+              <p class="video__text description">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
+              <div class="video__block">
+                <button class="video__button" type="button">
+                  <span class="visually-hidden">Воспроизвести</span>
+                </button>
+                <video class="video__block" poster="">
+                  Your browser doesn't support HTML5 video tag
+                </video>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer__wrapper">
+        <b class="footer__tag title title--h1">#visitSEDONA</b>
+        <ul class="footer__social social">
+          <li class="social__element">
+            <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
+              <span class="visually-hidden">ВКонтакте</span>
+            </a>
+          </li>
+          <li class="social__element">
+            <a class="social__link social__link--telegram" href="tg://resolve?domain=htmlacademy">
+              <span class="visually-hidden">Telegram</span>
+            </a>
+          </li>
+          <li class="social__element">
+            <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">
+              <span class="visually-hidden">Youtube</span>
+            </a>
+          </li>
+        </ul>
+        <div class="footer__copyright copyright">
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+            <span>Разработано</span>
+            <svg class="copyright__icon" width="27" height="35" aria-label="Сайт HTML Academy">
+              <use href="img/sprite.svg#icon-copyright"></use>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </footer>
+    <script src="js/script.js"></script>
+  </body>
+</html>
