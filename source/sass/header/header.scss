@@ -1,8 +1,9 @@
 .header {
   @include transform-align;
   position: relative;
-  display: flex;
-  padding: 0 20px;
+  z-index: 2;
+  height: 56px;
+
 
   @media (min-width: $tablet-width) {
     padding: 0;
@@ -12,9 +13,12 @@
 .header__logo {
   position: absolute;
   width: 185px;
-  left: 67px;
+  height: 56px;
+  // left: 67px;
+  left: 20%;
 
   @media (min-width: $tablet-width) {
+    z-index: 3;
     left: 290px;
   }
 

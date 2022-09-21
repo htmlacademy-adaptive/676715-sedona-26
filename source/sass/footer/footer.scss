@@ -36,15 +36,3 @@
   display: flex;
   flex-wrap: wrap;
 }
-
-.footer .description {
-  @include margin-zeroing;
-}
-
-.footer__copyright {
-  display: flex;
-}
-
-.footer__copyright .description {
-  padding-right: 13px;
-}

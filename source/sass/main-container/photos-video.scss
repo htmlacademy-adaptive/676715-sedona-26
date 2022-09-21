@@ -40,6 +40,7 @@
 }
 
 .photos-video__item {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: start;
@@ -52,6 +53,25 @@
   @media (min-width: $desktop-width) {
     position: relative;
   }
+}
+
+.photos-video__item:first-child::before,
+.photos-video__item::after {
+  position: absolute;
+  content: "";
+  bottom: 0;
+  left: -20px;
+  width: 320px;
+  height: 1px;
+  background-color: $grey-e5;
+
+  @media (min-width: $tablet-width) {
+    content: none;
+  }
+}
+
+.photos-video__item:first-child::before {
+  top: 0;
 }
 
 .photos-video__item:first-child {
@@ -80,7 +100,7 @@
     align-items: center;
     width: 100%;
     padding: 22px 20px 15px 20px;
-    background-color: $grey-light;
+    background-color: $grey-f2;
   }
 
   @media (min-width: $desktop-width) {
@@ -118,4 +138,44 @@
   @media (min-width: $tablet-width) {
     padding-bottom: 0;
   }
+}
+
+.photos-video__button {
+  padding: 0;
+  font: inherit;
+  font-weight: 700;
+  color: $black;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+
+  @media (min-width: $desktop-width) {
+    color: $white;
+  }
+}
+
+.photos-video__icon {
+  margin-right: 14px;
+  opacity: 0.3;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 9px;
+  }
+
+  @media (min-width: $desktop-width) {
+    opacity: 1;
+  }
+}
+
+.photos-video__button:hover {
+  opacity: 0.7;
+}
+
+.photos-video__button:focus {
+  opacity: 0.5;
+  outline: none;
+}
+
+.photos-video__button:active {
+  opacity: 0.3;
 }
