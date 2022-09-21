@@ -5,27 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Седона - форма отзыва</title>
     <link href="css/style.css" rel="stylesheet">
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="img/favicons/favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="img/favicons/apple.png">
+    <link rel="manifest" href="manifest.webmanifest">
   </head>
   <body class="page__body">
     <header class="header">
-      <a class="header__logo">
+      <a class="header__logo" href="index.html">
         <img class="header__image" src="img/logo-sedona.svg" loading="lazy" width="185" height="96" alt="Логотип Седоны.">
       </a>
       <!-- Меню -->
-      <nav class="main-nav">
+      <nav class="main-nav main-nav--closed main-nav--nojs"> <!-- main-nav--closed меню закрыто, main-nav--opened - меню открыто -->
         <button class="main-nav__toggle button" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
-            <li class="main-nav__item site-list__item site-list__item--active">
-              <a class="main-nav__link site-list__link">Главная</a>
+            <li class="main-nav__item site-list__item">
+              <a class="main-nav__link site-list__link" href="index.html">Главная</a>
             </li>
             <li class="main-nav__item site-list__item">
-              <a class="main-nav__link site-list__link" href="#">Фото и видео</a>
+              <a class="main-nav__link site-list__link" href="catalog.html">Фото и видео</a>
             </li>
             <li class="main-nav__item site-list__item">
-              <a class="main-nav__link site-list__link" href="#">Форма отзыва</a>
+              <a class="main-nav__link site-list__link site-list__link--active">Форма отзыва</a>
             </li>
             <li class="main-nav__item site-list__item">
               <a class="main-nav__link site-list__link" href="#">HTML Academy</a>
@@ -39,7 +43,7 @@
       <!-- Внутренний баннер -->
       <div class="banner banner--inner">
         <div class="banner__container">
-          <img src="img/banner/banner-text-inner.svg" loading="lazy" width="229" height="39" alt="Общий вид Седоны.">
+          <img class="banner__text" src="img/banner/banner-text-inner.svg" loading="lazy" width="229" height="39" alt="Общий вид Седоны.">
         </div>
       </div>
       <section class="review">
@@ -66,35 +70,37 @@
             </fieldset>
             <fieldset class="form__group form__group--contacts">
               <legend class="form__group-title title title--h2">Контактная информация:</legend>
-              <div class="form__field-group">
+              <div class="form__field-group phone">
                 <label class="form__label" for="phone">Контактный телефон*:</label>
-                <input class="form__field field phone" type="text" id="phone" name="phone" placeholder="Введите телефон" required>
+                <input class="form__field field" type="text" id="phone" name="phone" placeholder="Введите телефон" required>
               </div>
-              <div class="form__field-group">
+              <div class="form__field-group email">
                 <label class="form__label" for="email">Электронная почта*:</label>
-                <input class="form__field field email" type="email" id="email" name="email" placeholder="Введите e-mail" required>
+                <input class="form__field field" type="email" id="email" name="email" placeholder="Введите e-mail" required>
               </div>
             </fieldset>
             <fieldset class="form__group form__group--impression">
-              <legend class="form__group-title title title--h2">Ваше общее впечатление:</legend>
+              <div class="form__group-line">
+                <legend class="form__group-title title title--h2">Ваше общее впечатление:</legend>
+              </div>
               <ul class="form__list">
                 <li class="form__item">
-                  <label class="control ">
-                    <input class="visually-hidden control__input" type="radio" name="positive" value="yes" checked>
+                  <label class="control">
+                    <input class="visually-hidden control__input" type="radio" name="impression" value="positive" checked>
                     <span class="control__mark"></span>
                     <span class="control__label">Скорее положительное</span>
                   </label>
                 </li>
                 <li class="form__item">
                   <label class="control">
-                    <input class="visually-hidden control__input" type="radio" name="negative" value="no">
+                    <input class="visually-hidden control__input" type="radio" name="impression" value="negative">
                     <span class="control__mark"></span>
                     <span class="control__label">Скорее отрицательное</span>
                   </label>
                 </li>
                 <li class="form__item">
                   <label class="control">
-                    <input class="visually-hidden control__input" type="radio" name="no-answer" value="no">
+                    <input class="visually-hidden control__input" type="radio" name="impression" value="no-answer">
                     <span class="control__mark"></span>
                     <span class="control__label">Затрудняюсь ответить</span>
                   </label>
@@ -102,7 +108,9 @@
               </ul>
             </fieldset>
             <fieldset class="form__group form__group--attractions">
-              <legend class="form__group-title title title--h2">Посещенные достопримечательности:</legend>
+              <div class="form__group-line">
+                <legend class="form__group-title title title--h2">Посещенные<br>достопримечательности:</legend>
+              </div>
               <ul class="form__list">
                 <li class="form__item">
                   <label class="control">
@@ -135,16 +143,16 @@
               </ul>
             </fieldset>
             <fieldset class="form__group form__group--comment">
-              <legend class="form__group-title title title--h2">Опишите свои эмоции:</legend>
+              <div class="form__group-line">
+                <legend class="form__group-title title title--h2">Опишите свои эмоции:</legend>
+              </div>
               <div class="form__field-group">
                 <label class="visually-hidden" for="comment">Комментарий:</label>
                 <textarea class="form__field field comment" rows="6" id="comment" name="comment" placeholder="Опишите подробно все свои восторги"></textarea>
               </div>
             </fieldset>
             <div class="form__group-container">
-              <button class="button button-main" type="submit">
-                <span>Отправить отзыв</span>
-              </button>
+              <button class="button button-main" type="submit">Отправить отзыв</button>
               <p class="form__description-small description">* — обязательные поля</p>
             </div>
           </form>
@@ -172,12 +180,35 @@
           </li>
         </ul>
         <div class="footer__copyright copyright">
-          <p class="copyright__text description">Разработано</p>
           <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-            <span class="visually-hidden">HTML Academy</span>
+            <span>Разработано</span>
+            <svg class="copyright__icon" width="27" height="35" aria-label="Сайт HTML Academy">
+              <use href="img/sprite.svg#icon-copyright"></use>
+            </svg>
           </a>
         </div>
       </div>
     </footer>
+    <!-- Модальное окно "Что-то пошло не так!" -->
+    <div class="modal__container modal__container-close"> <!--modal__container-close - модалка закрыта-->
+      <section class="modal modal__message-error">
+        <h2 class="modal__title title title--h1">Что-то пошло не&nbsp;так!</h2>
+        <p class="modal__description description">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+        <button class="modal__button button button-main" type="button">OK</button>
+      </section>
+    </div>
+    <!-- Модальное окно "Ваш отзыв отправлен!" -->
+    <div class="modal__container modal__container-close"> <!--modal__container-close - модалка закрыта-->
+      <section class="modal modal__message-send">
+        <div class="modal__content">
+          <h2 class="modal__title title title--h1">Ваш отзыв отправлен!</h2>
+          <p class="modal__description description">Спасибо за ваше участие, ваш отзыв уже поступил к нам.<br>В ближайшее время мы опубликуем его на сайте.</p>
+        </div>
+        <div class="modal__button-container">
+          <button class="modal__button button button-main" type="button">Закрыть окно</button>
+        </div>
+      </section>
+    </div>
+    <script src="js/script.js"></script>
   </body>
 </html>
