@@ -3,34 +3,34 @@
   height: 389px;
   padding-top: 90px;
   background-color: $banner;
-  background-image: url("../../img/banner/banner-background-mobile.jpg");
+  background-image: url("../img/banner/banner-background-mobile.jpg");
   background-repeat: no-repeat;
   background-size: 100% 389px;
 
   @media (min-resolution: 2dppx) {
-    background-image: url("../../img/banner/banner-background-mobile@2x.jpg");
+    background-image: url("../img/banner/banner-background-mobile@2x.jpg");
   }
 
   @media (min-width: $tablet-width) {
     height: 518px;
     padding-top: 77px;
-    background-image: url("../../img/banner/banner-background-desktop.jpg");
+    background-image: url("../img/banner/banner-background-desktop.jpg");
     background-position: 50% bottom;
     background-size: auto 518px;
 
     @media (min-resolution: 2dppx) {
-      background-image: url("../../img/banner/banner-background-desktop@2x.jpg");
+      background-image: url("../img/banner/banner-background-desktop@2x.jpg");
     }
   }
 
   @media (min-width: $desktop-width) {
     height: 518px;
     padding-top: 77px;
-    background-image: url("../../img/banner/banner-background-desktop.jpg");
+    background-image: url("../img/banner/banner-background-desktop.jpg");
     background-position-x: 0;
 
     @media (min-resolution: 2dppx) {
-      background-image: url("../../img/banner/banner-background-desktop@2x.jpg");
+      background-image: url("../img/banner/banner-background-desktop@2x.jpg");
     }
   }
 }
@@ -45,33 +45,33 @@
 .banner--inner {
   height: 158px;
   padding-top: 52px;
-  background-image: url("../../img/banner/banner-background-mobile.jpg");
+  background-image: url("../img/banner/banner-background-mobile.jpg");
   background-position: 50% bottom;
   background-size: 100% auto;
 
   @media (min-resolution: 2dppx) {
-    background-image: url("../../img/banner/banner-background-mobile@2x.jpg");
+    background-image: url("../img/banner/banner-background-mobile@2x.jpg");
   }
 
   @media (min-width: $tablet-width) {
     height: 290px;
     padding-top: 95px;
-    background-image: url("../../img/banner/banner-background-desktop.jpg");
+    background-image: url("../img/banner/banner-background-desktop.jpg");
     background-position: 50% bottom;
     background-size: 100% auto;
 
     @media (min-resolution: 2dppx) {
-      background-image: url("../../img/banner/banner-background-desktop@2x.jpg");
+      background-image: url("../img/banner/banner-background-desktop@2x.jpg");
     }
   }
 
   @media (min-width: $desktop-width) {
     height: 301px;
     padding-top: 101px;
-    background-image: url("../../img/banner/banner-background-desktop.jpg");
+    background-image: url("../img/banner/banner-background-desktop.jpg");
 
     @media (min-resolution: 2dppx) {
-      background-image: url("../../img/banner/banner-background-desktop@2x.jpg");
+      background-image: url("../img/banner/banner-background-desktop@2x.jpg");
     }
   }
 }
@@ -97,7 +97,7 @@
     bottom: 0;
     height: 57px;
     background-color: transparent;
-    background-image: url("../../img/banner/banner-decor.svg");
+    background-image: url("../img/banner/banner-decor.svg");
     background-position: 50% 0;
     background-size: auto auto;
     clip-path: none;
@@ -112,7 +112,7 @@
     bottom: 0;
     height: 57px;
     background-color: transparent;
-    background-image: url("../../img/banner/banner-decor.svg");
+    background-image: url("../img/banner/banner-decor.svg");
     background-position: 50% 0;
     background-size: auto auto;
     clip-path: none;

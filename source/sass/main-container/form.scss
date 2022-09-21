@@ -159,9 +159,6 @@
 }
 
 .form__group--contacts {
-  // display: flex;
-  //   flex-direction: column;
-  //   align-items: center;
   padding-bottom: 34px;
 
   @media (min-width: $tablet-width) {
@@ -194,11 +191,11 @@
 }
 
 .phone::before {
-  background-image: url("../../img/icons/form/icon-phone.svg");
+  background-image: url("../img/icons/form/icon-phone.svg");
 }
 
 .email::before {
-  background-image: url("../../img/icons/form/icon-email.svg");
+  background-image: url("../img/icons/form/icon-email.svg");
 }
 
 .form__group--impression,
@@ -306,7 +303,7 @@
   width: 46px;
   height: 46px;
   padding: 15px 12px;
-  background-image: url("../../img/icons/form/icon-form-checked.svg");
+  background-image: url("../img/icons/form/icon-form-checked.svg");
   background-repeat: no-repeat;
   background-position: center;
 }

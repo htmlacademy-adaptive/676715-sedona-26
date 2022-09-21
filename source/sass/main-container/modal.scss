@@ -1,5 +1,5 @@
 /* Modal */
-.modal__container {
+.modal {
   position: fixed;
   top: 0;
   left: 0;
@@ -9,11 +9,11 @@
   background-color: rgba($black, 0.3);
 }
 
-.modal__container-close {
+.modal--close {
   display: none;
 }
 
-.modal {
+.modal__message {
   position: relative;
   margin: auto;
   text-transform: uppercase;
@@ -22,7 +22,7 @@
   box-shadow: 0 7px 15px rgba($shadow-modal, 0.15);
 }
 
-.modal__message-error {
+.modal__message--error {
   width: 320px;
   padding: 45px 42px 35px 42px;
 
@@ -32,13 +32,13 @@
   }
 }
 
-.modal__message-send {
+.modal__message--send {
   @media (min-width: $tablet-width) {
     width: 640px;
   }
 }
 
-.modal__message-send .modal__content {
+.modal__message--send .modal__content {
   padding: 39px 39px 0 39px;
 
   @media (min-width: $tablet-width) {
@@ -55,7 +55,7 @@
   padding-bottom: 28px;
 }
 
-.modal__message-send .modal__description {
+.modal__message--send .modal__description {
   padding-bottom: 35px;
 }
 
@@ -70,17 +70,21 @@
 }
 
 .modal__button {
+  width: 180px;
   padding: 18px 76px 14px 76px;
 
   @media (min-width: $tablet-width) {
+    width: 272px;
     padding: 19px 122px 14px 122px;
   }
 }
 
-.modal__message-send .modal__button {
+.modal__message--send .modal__button {
+  width: 280px;
   padding: 18px 62px 14px 62px;
 
   @media (min-width: $tablet-width) {
+    width: 458px;
     padding: 19px 140px 14px 140px;
   }
 }
