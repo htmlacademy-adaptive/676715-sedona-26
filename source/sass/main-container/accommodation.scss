@@ -1,0 +1,20 @@
+.accommodation {
+  padding-left: 47px;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 73px;
+    padding-left: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 104px;
+  }
+}
+
+.accommodation::before {
+  background-image: url("../img/advantages/advantages-icon-1.svg");
+
+  @media (min-width: $desktop-width) {
+    left: 37%;
+  }
+}

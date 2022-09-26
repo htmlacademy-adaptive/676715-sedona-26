@@ -1,0 +1,18 @@
+.bridge .text__wrapper {
+  @media (min-width: $tablet-width) {
+    order: 2;
+  }
+}
+
+.bridge .text__container {
+  padding-top: 39px;
+  padding-bottom: 35px;
+
+  @media (min-width: $tablet-width) {
+    padding: 43px 36px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 51px 78px 53px 78px;
+  }
+}

@@ -1,0 +1,11 @@
+.souvenirs {
+  padding-left: 44px;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 0;
+  }
+}
+
+.souvenirs::before {
+  background-image: url("../img/advantages/advantages-icon-3.svg");
+}

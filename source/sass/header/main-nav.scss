@@ -54,10 +54,13 @@
   display: none;
 }
 
-.main-nav--nojs .main-nav--wrapper {
-  position: static;
+.main-nav--nojs .main-nav__wrapper {
+  position: relative;
 }
 
+.main-nav--nojs .main-nav__item {
+  display: block;
+}
 
 .main-nav--opened .main-nav__toggle::before,
 .main-nav--opened .main-nav__toggle::after {
@@ -100,7 +103,8 @@
   background-color: $blue-81;
 }
 
-.main-nav--opened .main-nav__wrapper::after {
+.main-nav--opened .main-nav__wrapper::after,
+.main-nav--nojs .main-nav__wrapper::after {
   position: absolute;
   content: "";
   z-index: 4;
