@@ -105,11 +105,10 @@
 }
 
 .banner--inner::after {
-  bottom: 0;
+  bottom: -1px;
   height: 10%;
 
   @media (min-width: $tablet-width) {
-    bottom: 0;
     height: 57px;
     background-color: transparent;
     background-image: url("../img/banner/banner-decor.svg");

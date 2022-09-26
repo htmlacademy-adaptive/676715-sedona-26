@@ -28,7 +28,7 @@
 .form__group::before {
   position: absolute;
   content: "";
-  top: -70px;
+  top: 0;
   left: -20px;
   width: 320px;
   height: 1px;
@@ -65,7 +65,7 @@
   @media (min-width: $tablet-width) {
     position: absolute;
     content: "";
-    top: -50px;
+    top: 0;
     right: 0;
     width: 1px;
     height: 110%;
@@ -124,7 +124,7 @@
 }
 
 .field {
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 18px;
   line-height: 26px;
   font-weight: 700;
@@ -191,11 +191,11 @@
 }
 
 .phone::before {
-  background-image: url("../img/icons/form/icon-phone.svg");
+  background-image: url("../img/form/icon-phone.svg");
 }
 
 .email::before {
-  background-image: url("../img/icons/form/icon-email.svg");
+  background-image: url("../img/form/icon-email.svg");
 }
 
 .form__group--impression,
@@ -303,7 +303,7 @@
   width: 46px;
   height: 46px;
   padding: 15px 12px;
-  background-image: url("../img/icons/form/icon-form-checked.svg");
+  background-image: url("../img/form/icon-form-checked.svg");
   background-repeat: no-repeat;
   background-position: center;
 }

@@ -1,0 +1,16 @@
+.food {
+  padding-left: 52px;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 49px;
+    padding-left: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 114px;
+  }
+}
+
+.food::before {
+  background-image: url("../img/advantages/advantages-icon-2.svg");
+}
